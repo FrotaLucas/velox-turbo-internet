@@ -19,6 +19,12 @@ const AllBenefits: React.FC = () => {
           </TitleThird>
         </TextContent>
         <CardsContent>
+          {BoxesContent.map((item,index) => <>
+            <div key={index}>
+              <img  src={`svgs/${item.svg}.svg`}/>
+              <p>{item.content}</p> 
+            </div>
+          </>)}
 
         </CardsContent>
       </DivContainer>
