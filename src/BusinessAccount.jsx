@@ -4,9 +4,13 @@ import HowItWorks from './how-it-works/HowItWorks';
 const BusinessAccount = () => {
   return (
     <>
-      <Banner />
-      <AllBenefits />
-      <HowItWorks />
+      <header></header>
+      <main>
+        <Banner />
+        <AllBenefits />
+        <HowItWorks />
+      </main>
+      <footer></footer>
     </>
   );
 };
