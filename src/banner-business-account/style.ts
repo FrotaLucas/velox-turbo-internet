@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import HeroBannerDesktop from '../../public/images/hero-banner-desktop.png'
-import HeroBannerMobile from '../../public/images/hero-banner-mobile.png'
+import HeroBannerDesktop from '/images/hero-banner-desktop.png';
+import HeroBannerMobile from '/images/hero-banner-mobile.png';
 
 const SectionContainer = styled.section`
   background-image: url('${HeroBannerDesktop}');
@@ -10,7 +10,6 @@ const SectionContainer = styled.section`
 
   @media (max-width: 1024px) {
   background-image: url('${HeroBannerMobile}');
-  
   }
   
 `;
