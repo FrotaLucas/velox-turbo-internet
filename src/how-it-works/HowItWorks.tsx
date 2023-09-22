@@ -2,13 +2,16 @@ import React from "react";
 import { DivContainer, HowWorksButton, SectionContainer, SubTitle, TextContent, Title, Video } from "./style";
 
 const HowItWOrks: React.FC = () => {
-
+const [isMobile, setIsMobile] = React.useState<boolean>(window.innerWidth < 1024)
+React.useEffect( ()=>{
+  const handleResize = () => setIsMobile(window.innerWidth < 1024)
+  window.addEventListener('resize', handleResize)
+},[ isMobile])
   return(
     <SectionContainer>
       <DivContainer>
         <Video>
           <iframe src="https://player.vimeo.com/video/439419726?h=035fa20817&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen ></iframe>  
-        
         </Video>
         <TextContent>
           <Title>
@@ -17,10 +20,11 @@ const HowItWOrks: React.FC = () => {
           <SubTitle>With the support and service of Velox GmbH, you 
             don't have to wait until to get things done.
           </SubTitle>
-          <HowWorksButton>
-            Let's try
-          </HowWorksButton>
+          {
+            !isMobile &&   <HowWorksButton> Let's try</HowWorksButton>
+          }
         </TextContent>
+        {isMobile && <HowWorksButton> Let's try'</HowWorksButton>}
       </DivContainer>
     </SectionContainer>
   )
