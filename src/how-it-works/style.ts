@@ -10,22 +10,51 @@ const DivContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   display: flex;
-  //padding-top: 5rem;
-  //gap: 5rem;
+  padding: 5rem 0;
+  gap: 5rem;
 
   @media (max-width: 1024px){
   flex-direction: column;
-  //gap: 1rem;
+  gap: unset;
+  > div:nth-child(1){
+    order: 1;
+  }
+  > div:nth-child(2){
+    order: 0;
+  }
   }
 `;
 export {DivContainer};
 
-const Video = styled.div``;
+const Video = styled.div`
+  position: relative;
+  width: 40%;
+
+  > iframe{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+  }  
+
+  @media (max-width: 1024px){
+    width: 100%;
+    padding-bottom: 60%;
+  }
+
+  > iframe {
+    height: 100%;
+  }
+`;
 export {Video};
 
 const TextContent = styled.div`
   display: flex;
   flex-direction: column;
+  width: 50%;
+
+  @media (max-width: 1024px){
+    width: unset;
+  }
 `;
 export {TextContent};
 
@@ -40,7 +69,6 @@ const SubTitle = styled.p`
   color: white;
 `;
 export {SubTitle};
-
 
 const HowWorksButton = styled.button`
     margin: 2rem 0;
