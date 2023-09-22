@@ -10,7 +10,7 @@ const Banner: React.FC = () => {
           Bring more efficiency to your business with the best internet and reach out new customers
         </TitleContent>
         <SubTitle>
-        All in a fast, practical way and with the best service
+        All in a fast and practical way with the best service
         </SubTitle>
         <HomeButton> Check out More</HomeButton>
         </DivContainer>
