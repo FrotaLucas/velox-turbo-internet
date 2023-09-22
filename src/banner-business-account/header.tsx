@@ -1,11 +1,19 @@
 import React from 'react'
-import { SectionContainer } from './style'
+import { DivContainer, HomeButton, SectionContainer, SubTitle, TitleContent } from './style'
 
 const Banner: React.FC = () => {
 
   return (
     <SectionContainer>
-      Titulo
+      <DivContainer>
+        <TitleContent>
+          Bring more efficiency to your business with the best internet and reach out new customers
+        </TitleContent>
+        <SubTitle>
+        All in a fast, practical way and with the best service
+        </SubTitle>
+        <HomeButton> Check out More</HomeButton>
+        </DivContainer>
     </SectionContainer>
 
   )
