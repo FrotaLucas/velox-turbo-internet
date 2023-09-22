@@ -24,9 +24,10 @@ const DivContainer = styled.div`
 export { DivContainer };
 
 const TitleContent = styled.h1`
-    font-size: 2rem;
     max-width: 25rem;
-    line-height: 150%;
+    font-size: 3rem;
+    line-height: 125%;
+    font-weight: 400;
 `;
 export { TitleContent };
 
