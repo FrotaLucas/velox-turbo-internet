@@ -1,15 +1,33 @@
 import styled from "styled-components";
+import HeroBannerDesktop from '../../public/images/hero-banner-desktop.png'
+import HeroBannerMobile from '../../public/images/hero-banner-mobile.png'
 
 const SectionContainer = styled.section`
+  background-image: url('${HeroBannerDesktop}');
+  background-size: cover;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media (max-width: 1024px) {
+  background-image: url('${HeroBannerMobile}');
+  
+  }
+  
 `;
 export { SectionContainer };
 
 const DivContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
 `;
 export { DivContainer };
 
 const TitleContent = styled.h1`
-  font-size: 3rem;
+    font-size: 2rem;
+    max-width: 25rem;
+    line-height: 150%;
 `;
 export { TitleContent };
 
