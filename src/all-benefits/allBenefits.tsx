@@ -1,5 +1,6 @@
 import React from "react";
 import { CardsContent, DivContainer, SectionContainer, TextContent, TitleFirst, TitleSecond, TitleThird } from "./style";
+import { BoxesContent } from "./boxContent";
 
 const AllBenefits: React.FC = () => {
 
