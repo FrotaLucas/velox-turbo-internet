@@ -1,6 +1,6 @@
 {
-  "name": "business-account",
   "homepage": "https://frotalucas.github.io/business-account-projecttwo",
+  "name": "business-account",
   "private": true,
   "version": "0.0.0",
   "type": "module",
