@@ -1,7 +1,7 @@
 import React from "react";
 import { DivContainer, HowWorksButton, SectionContainer, SubTitle, TextContent, Title, Video } from "./style";
 
-const HowItWOrks: React.FC = () => {
+const HowItWorks: React.FC = () => {
 const [isMobile, setIsMobile] = React.useState<boolean>(window.innerWidth < 1024)
 React.useEffect( ()=>{
   const handleResize = () => setIsMobile(window.innerWidth < 1024)
@@ -30,4 +30,4 @@ React.useEffect( ()=>{
   )
 }
 
-export default HowItWOrks;
+export default HowItWorks;
