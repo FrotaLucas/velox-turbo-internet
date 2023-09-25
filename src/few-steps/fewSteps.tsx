@@ -3,7 +3,10 @@ import { DivContainer, ItensContainer, SectionContainer, TextContainer, Title } 
 import stepsContent from "./stepsContent";
 
 const FewSteps: React.FC = () => {
-
+const [step, setStep] = React.useState(stepsContent[0])
+function handleClick(index){
+  setStep[index]
+}
   return(
     <SectionContainer>
       <DivContainer>
@@ -14,8 +17,8 @@ const FewSteps: React.FC = () => {
 
           <ItensContainer>
             {stepsContent.map( (item, index)=> 
-            <div> 
-              <span>{index +1}</span>
+            <div key={index}> 
+              <span onClick={()=> handleClick(index)}>{index +1}</span>
               <p>{item.content}</p>
             </div> )}
           </ItensContainer>
