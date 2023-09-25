@@ -22,7 +22,6 @@ function handleClick(index){
               <p>{item.content}</p>
             </div> )}
           </ItensContainer>
-         
         </TextContainer>
 
       </DivContainer>
