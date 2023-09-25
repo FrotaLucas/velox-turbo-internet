@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
-
 const SectionContainer = styled.section`
-  background-color:  #0b2859;;
+  background-color:  #0b2859;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1024px){
+    height: unset;
+    padding: 2rem 0;
+  }
 `;
 export {SectionContainer};
 
@@ -10,12 +17,17 @@ const DivContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   display: flex;
-  padding: 5rem 0;
+  height: 30rem;
   gap: 5rem;
+
+  > div:nth-child(2){
+    justify-content: center;
+  }
 
   @media (max-width: 1024px){
   flex-direction: column;
   gap: unset;
+  height: unset;
   > div:nth-child(1){
     order: 1;
   }
