@@ -11,7 +11,7 @@ React.useEffect( ()=>{
     <SectionContainer>
       <DivContainer>
         <Video>
-          <iframe src="https://player.vimeo.com/video/439419726?h=035fa20817&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen ></iframe>  
+          <iframe src="https://player.vimeo.com/video/439419726?h=035fa20817&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameBorder="0" allow="fullscreen; picture-in-picture" allowFullScreen ></iframe>  
         </Video>
         <TextContent>
           <Title>
