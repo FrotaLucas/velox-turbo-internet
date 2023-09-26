@@ -20,13 +20,12 @@ const AllBenefits: React.FC = () => {
           <BenefitsButton>Let's try</BenefitsButton>
         </TextContent>
         <CardsContent>
-          {BoxesContent.map((item,index) => <>
-            <div key={index}>
-              <img  src={`svgs/${item.svg}.svg`}/>
-              <p>{item.content}</p> 
+          {BoxesContent.map((item,index) => 
+            <div key={`box-${index}`}>
+              <img key={`img-${item.svg}`} src={`svgs/${item.svg}.svg`}alt={item.content}/>
+              <p key={`p-${index}`}>{item.content}</p> 
             </div>
-          </>)}
-
+           )}
         </CardsContent>
       </DivContainer>
     </SectionContainer>
