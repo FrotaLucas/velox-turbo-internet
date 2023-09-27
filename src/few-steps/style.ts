@@ -13,6 +13,7 @@ const DivContainer = styled.div`
   padding: 5rem 0;
 
   @media (max-width: 1024px){
+    flex-direction: column;
   }
 `;
 export {DivContainer};
