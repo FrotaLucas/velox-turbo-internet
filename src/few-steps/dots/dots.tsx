@@ -1,18 +1,25 @@
 import React from "react";
 import { Dot } from "./style";
-
+import { LineContent } from "./style";
 interface DotsProperties {
-  backGroundProperty: boolean;
+  backGroundColor: boolean;
   onClick: () => void;
+  indexNumber: number;
+  content: string;
 }
 
-const DotContainer: React.FC<DotsProperties> = ({backGroundProperty, onClick}) => {
+const DotContainer: React.FC<DotsProperties> = ({ backGroundColor, onClick, indexNumber, content}) => {
 
   return(
-    <Dot toggle={backGroundProperty}>
-
-    </Dot>
+    <>
+      <Dot toggle={backGroundColor} onClick={onClick}>
+        {indexNumber}
+      </Dot>
+      <LineContent>
+        {content}
+      </LineContent>
+    </>
   )
 }
 
-export default DotContainer;
+export {DotContainer};
