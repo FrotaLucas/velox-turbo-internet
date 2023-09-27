@@ -1,7 +1,7 @@
 import React from "react";
 import { DivContainer, ItensContainer, SectionContainer, TextContainer, Title } from "./style";
 import stepsContent from "./stepsContent";
-//import {StepImage} from "../../public/images";
+import { Dot } from "./dots/style";
 
 const FewSteps: React.FC = () => {
 const [step, setStep] = React.useState(stepsContent[0])
