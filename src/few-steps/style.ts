@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 const SectionContainer = styled.section`
   background-color:  #e6e7ea;;
 `;
