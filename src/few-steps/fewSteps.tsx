@@ -1,5 +1,5 @@
 import React from "react";
-import { DivContainer, ItensContainer, SectionContainer, TextContainer, Title } from "./style";
+import { DivContainer, Image, ItensContainer, SectionContainer, TextContainer, Title } from "./style";
 import stepsContent from "./stepsContent";
 import {DotContainer} from "./dots/dots";
 
@@ -23,10 +23,10 @@ function handleClick(index){
            )}
           </ItensContainer>
         </TextContainer>
-        <div>
+        <Image>
           <p>{step.imgTitle}</p>
           <img src={`images/${step.img}.webp`}/>
-        </div>
+        </Image>
       </DivContainer>
     </SectionContainer>
   )
