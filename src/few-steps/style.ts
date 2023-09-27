@@ -37,4 +37,14 @@ const ItensContainer = styled.div`
 `;
 export {ItensContainer}
 
-
+const Image = styled.div`
+  > img {
+    width: unset;
+  }
+  @media (max-width: 1024px){
+    > img {
+      width: 100%;
+    }
+  }
+`;
+export {Image};
