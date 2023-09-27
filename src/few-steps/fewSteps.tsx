@@ -1,7 +1,7 @@
 import React from "react";
 import { DivContainer, ItensContainer, SectionContainer, TextContainer, Title } from "./style";
 import stepsContent from "./stepsContent";
-import { Dot } from "./dots/style";
+import {DotContainer} from "./dots/dots";
 
 const FewSteps: React.FC = () => {
 const [step, setStep] = React.useState(stepsContent[0])
@@ -19,10 +19,8 @@ function handleClick(index){
 
           <ItensContainer>
             {stepsContent.map( (item, index)=> 
-            <div key={index}> 
-              <span onClick={()=> handleClick(index)}>{index +1}</span>
-              <p>{item.title}</p>
-            </div> )}
+            <DotContainer key={index} backGroundColor={index == stepsContent.indexOf(step)} onClick={()=> handleClick(index)} indexNumber={index+1} content={item.title} /> 
+           )}
           </ItensContainer>
         </TextContainer>
         <div>
