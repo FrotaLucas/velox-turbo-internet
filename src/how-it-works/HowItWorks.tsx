@@ -24,7 +24,7 @@ React.useEffect( ()=>{
             !isMobile &&   <HowWorksButton> Let's try</HowWorksButton>
           }
         </TextContent>
-        {isMobile && <HowWorksButton> Let's try'</HowWorksButton>}
+        {isMobile && <HowWorksButton> Let's try</HowWorksButton>}
       </DivContainer>
     </SectionContainer>
   )
