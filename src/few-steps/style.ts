@@ -10,9 +10,11 @@ const DivContainer = styled.div`
   margin: 0 auto;
   display: flex;
   padding: 5rem 0;
+  gap: 10rem;
 
   @media (max-width: 1024px){
     flex-direction: column;
+    gap: unset;
   }
 `;
 export {DivContainer};
@@ -37,6 +39,9 @@ const ItensContainer = styled.div`
 export {ItensContainer}
 
 const Image = styled.div`
+ > h3{
+  margin-bottom: 2rem;
+ }
   > img {
     width: unset;
   }
