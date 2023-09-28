@@ -24,7 +24,7 @@ function handleClick(index: number){
                 <div key={`title-${index}`}>
                   {item.title}
                 </div>
-                <img src={`./public/svgs/${heights[index] ? 'arrow_up' : 'arrow_down'}.svg`}/>
+                <img src={`svgs/${heights[index] ? 'arrow_up' : 'arrow_down'}.svg`}/>
               </div>
               <span key={`line-style-${index}`}></span>
               <div key={`content-${index}`}>
