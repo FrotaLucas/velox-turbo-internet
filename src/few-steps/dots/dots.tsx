@@ -14,7 +14,7 @@ const DotContainer: React.FC<DotsProperties> = ({ backGroundColor, onClick, inde
   return(
     <div style={{display: 'flex', gap: '1rem'}}>
       <div style={{display: 'flex', marginBottom: '0.5rem'}}>
-      <Dot toggle={backGroundColor} onClick={onClick}>
+      <Dot toggle={!!backGroundColor} onClick={onClick}>
         {indexNumber}
       </Dot>
       <span></span>
