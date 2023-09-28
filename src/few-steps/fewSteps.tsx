@@ -24,7 +24,7 @@ function handleClick(index){
           </ItensContainer>
         </TextContainer>
         <Image>
-          <p>{step.imgTitle}</p>
+          <h3>{step.imgTitle}</h3>
           <img src={`images/${step.img}.webp`}/>
         </Image>
       </DivContainer>
