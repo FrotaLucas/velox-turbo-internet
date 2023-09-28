@@ -46,12 +46,12 @@ const TitleThird = styled.p``;
 export {TitleThird};
 
 const CardsContent = styled.div`
-    width: 40%;
+    width: 60%;
 
   > div {
     border: solid 1px #b4b8bf;
     margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
