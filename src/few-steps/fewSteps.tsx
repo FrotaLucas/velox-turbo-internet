@@ -19,7 +19,7 @@ function handleClick(index){
 
           <ItensContainer>
             {stepsContent.map( (item, index)=> 
-            <DotContainer key={index} backGroundColor={index == stepsContent.indexOf(step)} onClick={()=> handleClick(index)} indexNumber={index+1} content={item.title} /> 
+            <DotContainer key={index} backGroundColor={index === stepsContent.indexOf(step)} onClick={()=> handleClick(index)} indexNumber={index+1} content={item.title} /> 
            )}
           </ItensContainer>
         </TextContainer>
