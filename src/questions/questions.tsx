@@ -3,11 +3,11 @@ import {DivContainer, QuestionItem, SectionContainer, Title } from "./style";
 import QuestionsContent from "./questionsContent";
 
 interface QuestionsProps {
-  heightsType: Array<boolean>;
+  defaulthHeight: Array<boolean>;
 }
 
-const Questions: React.FC<QuestionsProps> = ()=> {
-const [heights, setHeights] = React.useState<QuestionsProps["heightsType"]>([false, false,false]);
+const Questions: React.FC<QuestionsProps> = () => {
+const [heights, setHeights] = React.useState<QuestionsProps["defaulthHeight"]>([false, false,false]);
 function handleClick(index: number){
   const collapsed = [...heights];
   collapsed[index] = !collapsed[index];
@@ -32,7 +32,6 @@ function handleClick(index: number){
               </div>
             </QuestionItem>
           )}
-        
       </DivContainer>
     </SectionContainer>
   )
