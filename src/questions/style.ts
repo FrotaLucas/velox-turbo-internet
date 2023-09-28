@@ -19,12 +19,13 @@ export {Title};
 
 const QuestionItem = styled.div<{trigger: boolean}>`
   width: 100%;
-  position: relative;
+  position: relative;//importante para fazer o widht do span se basear no width de QuestionItem
 
   > div:nth-child(1){
     position: relative;
     padding: 24px 8px;
-
+    display: flex;
+    justify-content: space-between;
   }
   span {
     position: absolute;
@@ -35,8 +36,7 @@ const QuestionItem = styled.div<{trigger: boolean}>`
   > div:nth-child(3) {
     padding-top: 24px;
     color: #000000b2;
-    height: ${({trigger}) => ( trigger && '300px')};
-    display: ${({trigger})=>(trigger ? 'none' : 'block' )};
+    display: ${({trigger})=>(trigger ? 'block' : 'none' )};
   }
 `;
 export {QuestionItem};
