@@ -1,15 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Form, FormContent, InputField, ReturnButton } from "./style";
 
 interface ModalProps {
   isOpen: boolean,
   onClose: ()=> void
 }
-
 const Modal: React.FC<ModalProps> = ({isOpen, onClose})=> {
+  useEffect(() => {
+    console.log("Toggle:", isOpen);
+  }, [isOpen]);
  return(<> 
         {isOpen && <Form>
-          <FormContent>
+          <FormContent toggle={isOpen}>
+            
             <ReturnButton onClick={onClose}>
               <img src={`svgs/chevron_left.svg`}/>
               Return
