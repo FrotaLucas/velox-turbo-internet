@@ -19,6 +19,8 @@ const [isModalOpen, setIsModalOpen] = React.useState(false)
             Plans of internet starting from 30 euros per month
           </TitleThird>
           <BenefitsButton onClick={()=> setIsModalOpen(true)}>Let's try</BenefitsButton>
+          {/* PROBLEMA: quando isOpen vira false o component Form desaparece na mesma hora nao dando tempo
+          para o FormContent executar o slideOutAnimation  */}
           <Modal isOpen = {isModalOpen} onClose={()=>setIsModalOpen(false)}/>
         </TextContent>
         <CardsContent>
