@@ -73,6 +73,8 @@ const FormContent = styled.div<{toggle: boolean}>`
 
   @media (max-width: 1024px){
    width: 100%;
+   max-height: 100vh; /* Adjust as needed */
+   
  
   }
 `;
