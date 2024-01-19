@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 
 const Form = styled.div`
@@ -11,6 +11,7 @@ const Form = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  //overflow: hidden; /* NAO TA FUNCIONANDO */
 
   h5{
     margin: unset;
@@ -40,16 +41,36 @@ const Form = styled.div`
 `;
 export {Form};
 
-const FormContent = styled.div`
-  //display: flex;
+const slideInAnimation = keyframes`
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`;
+const slideOutAnimation = keyframes`
+  from {
+    transform: translateX(0);  
+  }
+  to {
+    transform: translateX(100%);
+  }
+`;
+const FormContent = styled.div<{toggle: boolean}>`
   position: fixed;
   right: 0;
+  top: 0;
   width: 50%;
   padding: 2rem;
+  max-height: 80vh; /* Adjust as needed */
+  overflow-y: auto;
   background-color: rgb(255,255,255);
   border-radius: 10px;
-  //text-align: center;
-  
+  animation: ${({ toggle }) => (
+    //console.log('Toggle:', toggle),
+    toggle ? slideInAnimation : slideOutAnimation)} 2s ease;
+
   @media (max-width: 1024px){
    width: 100%;
  
