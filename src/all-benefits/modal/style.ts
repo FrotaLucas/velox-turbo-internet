@@ -63,7 +63,7 @@ const FormContent = styled.div<{toggle: boolean}>`
   top: 0;
   width: 50%;
   padding: 2rem;
-  max-height: 80vh; /* Adjust as needed */
+  max-height: 100vh; /* Adjust as needed */
   overflow-y: auto;
   background-color: rgb(255,255,255);
   border-radius: 10px;
@@ -73,7 +73,6 @@ const FormContent = styled.div<{toggle: boolean}>`
 
   @media (max-width: 1024px){
    width: 100%;
-   max-height: 100vh; /* Adjust as needed */
    
  
   }
