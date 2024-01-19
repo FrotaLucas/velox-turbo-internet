@@ -1,9 +1,10 @@
 import React from "react";
 import { BenefitsButton, CardsContent, DivContainer, SectionContainer, TextContent, TitleFirst, TitleSecond, TitleThird } from "./style";
 import { BoxesContent } from "./boxContent";
+import Modal from "./modal/modal";
 
 const AllBenefits: React.FC = () => {
-
+const [isModalOpen, setIsModalOpen] = React.useState(false)
   return(
     <SectionContainer>
       <DivContainer>
@@ -17,7 +18,8 @@ const AllBenefits: React.FC = () => {
           <TitleThird>
             Plans of internet starting from 30 euros per month
           </TitleThird>
-          <BenefitsButton>Let's try</BenefitsButton>
+          <BenefitsButton onClick={()=> setIsModalOpen(true)}>Let's try</BenefitsButton>
+          <Modal isOpen = {isModalOpen} onClose={()=>setIsModalOpen(false)}/>
         </TextContent>
         <CardsContent>
           {BoxesContent.map((item,index) => 
