@@ -1,10 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BenefitsButton, CardsContent, DivContainer, SectionContainer, TextContent, TitleFirst, TitleSecond, TitleThird } from "./style";
 import { BoxesContent } from "./boxContent";
 import Modal from "./modal/modal";
 
 const AllBenefits: React.FC = () => {
 const [isModalOpen, setIsModalOpen] = React.useState(false)
+
+//const[isForm, setIsForm] = React.useState(false)
+// useEffect(()=>{
+// ()=>setIsForm(!isForm)
+// }, [isModalOpen])
+// const handleClick = ()=>{
+//   setIsForm(!isForm)
+// }
   return(
     <SectionContainer>
       <DivContainer>

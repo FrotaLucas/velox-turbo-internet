@@ -3,7 +3,8 @@ import { Form, FormContent, InputField, ReturnButton } from "./style";
 
 interface ModalProps {
   isOpen: boolean,
-  onClose: ()=> void
+  onClose: ()=> void,
+ 
 }
 const Modal: React.FC<ModalProps> = ({isOpen, onClose})=> {
   useEffect(() => {
