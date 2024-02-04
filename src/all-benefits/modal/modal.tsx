@@ -10,8 +10,8 @@ const Modal: React.FC<ModalProps> = ({isOpen, onClose})=> {
   useEffect(() => {
     console.log("Toggle:", isOpen);
   }, [isOpen]);
- return(<> 
-        {isOpen && <Form>
+ return(
+        <Form toggle={isOpen}>
           <FormContent toggle={isOpen}>
             
             <ReturnButton onClick={onClose}>
@@ -52,8 +52,7 @@ const Modal: React.FC<ModalProps> = ({isOpen, onClose})=> {
             </select>
           </FormContent>
 
-  </Form>}
- </>)
+  </Form>)
 }
 
 export default Modal;
