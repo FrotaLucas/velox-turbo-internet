@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react';
-import { Overlay, FormContent, InputField, ReturnButton } from './style';
+import {
+  Overlay,
+  FormContent,
+  InputField,
+  ReturnButton,
+  SelectField,
+  SelectArea,
+} from './style';
 
 interface ModalProps {
   isOpen: boolean;
@@ -41,14 +48,15 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <label>Tax Identification</label>
           <input placeholder="enter" />
         </InputField>
-
-        <label> Revenue</label>
-        <select name="revenue-range" id="revenue">
-          <option>Up to € 50.000 </option>
-          <option>€50.000 to €500.000</option>
-          <option>€500.000 to €1.000.000</option>
-          <option>€1.000.000 to 10.000.000</option>
-        </select>
+        <SelectArea>
+          <label> Revenue</label>
+          <SelectField name="revenue-range" id="revenue">
+            <option>Up to € 50.000 </option>
+            <option>€50.000 to €500.000</option>
+            <option>€500.000 to €1.000.000</option>
+            <option>€1.000.000 to 10.000.000</option>
+          </SelectField>
+        </SelectArea>
       </FormContent>
     </>
   );

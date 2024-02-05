@@ -73,3 +73,17 @@ const ReturnButton = styled.div`
 `;
 
 export { ReturnButton };
+
+const SelectArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+export { SelectArea };
+const SelectField = styled.select`
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  background: #eee;
+`;
+export { SelectField };
