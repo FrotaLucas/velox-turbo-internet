@@ -1,17 +1,33 @@
 import styled, { keyframes } from 'styled-components';
 
-const Form = styled.div`
+const Overlay = styled.div<{ toggle: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  //overflow: hidden; /* NAO TA FUNCIONANDO */
+  visibility: ${({ toggle }) => (toggle ? 'visible' : 'hidden')};
+  opacity: ${({ toggle }) => (toggle ? 1 : 0)};
+  transition: visibility 2s, opacity 2s;
+  //overflow: hidden; NAO TA FUNCIONANDO
+  @media (max-width: 1024px) {
+  }
+`;
+export { Overlay };
 
+const FormContent = styled.div<{ toggle: boolean }>`
+  position: fixed;
+  right: ${({ toggle }) => (toggle ? 0 : '-100%')};
+  top: 0;
+  width: 50%;
+  padding: 2rem;
+  max-height: 100vh; /* Adjust as needed */
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: right 2s;
+  z-index: 999;
   h5 {
     margin: unset;
     margin-bottom: 0.5rem;
@@ -32,43 +48,6 @@ const Form = styled.div`
     font-size: 16px;
     font-weight: 400;
   }
-
-  @media (max-width: 1024px) {
-    background: rgba(10, 10, 10, 0.5);
-  }
-`;
-export { Form };
-
-const slideInAnimation = keyframes`
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-`;
-const slideOutAnimation = keyframes`
-  from {
-    transform: translateX(0);  
-  }
-  to {
-    transform: translateX(100%);
-  }
-`;
-const FormContent = styled.div<{ toggle: boolean }>`
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 50%;
-  padding: 2rem;
-  max-height: 100vh; /* Adjust as needed */
-  overflow-y: auto;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  animation: ${({ toggle }) =>
-      //console.log('Toggle:', toggle),
-      toggle ? slideInAnimation : slideOutAnimation}
-    2s ease;
 
   @media (max-width: 1024px) {
     width: 100%;
