@@ -1,15 +1,15 @@
-import AllBenefits from './all-benefits/Allbenefits';
-import Banner from './banner-business-account/header';
-import HowItWorks from './how-it-works/HowItWorks';
-import FewSteps from './few-steps/FewSteps';
-import Questions from './questions/questions';
+import AllBe from './all-benefits/allBenefit.tsx';
+import Banner from './banner-business-account/header.tsx';
+import HowItWorks from './how-it-works/howItWorks.tsx';
+import FewSteps from './few-steps/fewSteps.tsx';
+import Questions from './questions/questions.tsx';
 const BusinessAccount = () => {
   return (
     <>
       <header></header>
       <main>
         <Banner />
-        <AllBenefits />
+        <AllBe />
         <HowItWorks />
         <FewSteps />
         <Questions />

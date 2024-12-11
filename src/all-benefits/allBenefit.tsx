@@ -12,7 +12,7 @@ import {
 import { BoxesContent } from './boxContent';
 import Modal from './modal/modal';
 
-const AllBenefits: React.FC = () => {
+const AllBe: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   //const[isForm, setIsForm] = React.useState(false)
@@ -55,4 +55,4 @@ const AllBenefits: React.FC = () => {
   );
 };
 
-export default AllBenefits;
+export default AllBe;
