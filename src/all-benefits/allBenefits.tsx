@@ -26,7 +26,7 @@ const AllBenefits: React.FC = () => {
     <SectionContainer>
       <DivContainer>
         <TextContent>
-          <TitleFirst>Empowerment with velox gmbh</TitleFirst>
+          <TitleFirst>New Empowerment with velox gmbh</TitleFirst>
           <TitleSecond>Find out all benefits with Velox</TitleSecond>
           <TitleThird>
             Plans of internet starting from 30 euros per month
