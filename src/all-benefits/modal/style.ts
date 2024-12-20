@@ -9,7 +9,7 @@ const Overlay = styled.div<{ toggle: boolean }>`
   background: rgba(0, 0, 0, 0.5);
   visibility: ${({ toggle }) => (toggle ? 'visible' : 'hidden')};
   opacity: ${({ toggle }) => (toggle ? 1 : 0)};
-  transition: visibility 2s, opacity 2s;
+  transition: visibility 1.5s, opacity 1.5s;
   //overflow: hidden; NAO TA FUNCIONANDO
   @media (max-width: 1024px) {
   }
@@ -26,7 +26,7 @@ const FormContent = styled.div<{ toggle: boolean }>`
   overflow-y: auto;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  transition: right 2s;
+  transition: right 1.5s;
   z-index: 999;
   h5 {
     margin: unset;
