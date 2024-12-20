@@ -10,7 +10,8 @@ import {
   TitleThird,
 } from './style';
 import { BoxesContent } from './boxContent';
-import Modal from './modal/modal';
+//import Modal from './modal/modal';
+import Modal from '../shared/modal/modal';
 
 const AllBenefits: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
