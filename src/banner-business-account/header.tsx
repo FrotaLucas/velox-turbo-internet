@@ -16,7 +16,7 @@ const Banner: React.FC = () => {
     <SectionContainer>
       <DivContainer>
         <TitleContent>
-          Bring more efficiency to your business with the best internet and
+          BBring more efficiency to your business with the best internet and
           reach out new customers
         </TitleContent>
         <SubTitle>
