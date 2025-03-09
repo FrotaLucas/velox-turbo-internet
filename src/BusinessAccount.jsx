@@ -3,6 +3,7 @@ import AllBenefits from './all-benefits/allBenefits.tsx';
 import HowItWorks from './how-it-works/howItWorks.tsx';
 import FewSteps from './few-steps/fewSteps.tsx';
 import Questions from './questions/questions.tsx';
+
 const BusinessAccount = () => {
   return (
     <>
