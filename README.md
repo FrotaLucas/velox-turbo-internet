@@ -22,6 +22,7 @@ The API integrations are under development and will be merged into the main bran
 - **React**: Frontend framework for building the user interface.
 - **GH-Pages**: For deploying the application on GitHub Pages.
 - **Node.js**: For package management and project setup.
+- **Vite.js**:  Build tool and development server for fast and optimized builds, enabling quick development with features like hot module replacement (HMR) and efficient production builds.
 
 ---
 
@@ -35,7 +36,7 @@ git clone https://github.com/FrotaLucas/velox-turbo-internet.git
 
 ### Run the Application
 
-1. cd frontend
+1. cd velox-turbo-internet
 2. npm install
 3. npm start
 
